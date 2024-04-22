@@ -1,0 +1,115 @@
+
+.sidebar hr {
+    margin: 1rem 0;
+    color: inherit; /* 保持分割线颜色与背景一致 */
+    background-color: inherit;
+    border: 0;
+    border-bottom: 1px solid #787676; /* 灰色分割线 */
+}
+
+.sidebar .nav-link.active {
+    /* 导航栏内活动界面对应的字体 */
+    color: #fff !important; 
+    border-radius: 0.25rem;
+}
+
+.sidebar .nav-link {
+    color: #3b3a3a !important; /* 导航栏黑色字体 */
+}
+
+.page-content {
+    flex-grow: 1;
+    background-color: #fde7ef !important; /*内容界面背景*/
+    padding: 20px;
+}
+
+.shadow-sm.navbar.navbar-expand-lg.navbar-light.bg-white {
+    background-color: #fde7ef !important; /*标题背景颜色*/
+}
+
+
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: #3b3a3a; /* 标题文字颜色 */
+}
+
+.navbar .nav-dropdown {
+    position: absolute;
+    right: 0;
+}
+
+/* 下拉菜单样式 */
+.dropdown-menu {
+    background-color: #fcdee9; /* 浅粉红色 */
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+    padding: 0.5rem 0;
+}
+
+/* 按钮样式 */
+.btn {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .page-content,
+    .navbar {
+        padding: 10px;
+    }
+}
+
+/* 加载和反馈样式 */
+.loading-spinner {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    border-top-color: #d81b60;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.alert-success {
+    background-color: #a5d6a7;
+    color: #1b5e20;
+    border-color: #4caf50;
+}
+
+.alert-error {
+    background-color: #ef9a9a;
+    color: #c62828;
+    border-color: #f44336;
+}
+
+.card-text {
+    text-align: left !important;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.card-body,
+.mt-3 .card {
+    height: 100%;
+    width: 100%;
+}

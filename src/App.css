@@ -7,6 +7,56 @@
   pointer-events: none;
 }
 
+body {
+  margin: 0; /* 移除默认外边距 */
+  height: 100vh; /* 使body高度占满视口高度 */
+  background-image: url('./components/img/pexels-patrick-lavnod-135448329-21302484\ \(1\).jpg'); /* 背景图片路径 */
+  background-size: cover; /* 背景图片覆盖整个body */
+  background-position: center; /* 背景图片居中 */
+  background-repeat: no-repeat; /* 背景图片不重复 */
+}
+
+body, html {
+  height: 100%;
+  background-color: #f7f7f7; /* Light grey background for a minimalistic look */
+}
+
+.card {
+  border: none; /* Removes the default border */
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.card-body {
+  padding: 2rem; /* Spacious padding inside the card */
+  width: 350px;
+}
+
+.form-control {
+  border-radius: 0.25rem; /* Rounded borders for form inputs */
+  border: 1px solid #ced4da; /* Custom border color for inputs */
+}
+
+.btn-primary {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  border: none; /* Removes the default border */
+  padding: 0.5rem 1rem; /* Padding for the button */
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7; /* A slightly darker blue on hover */
+}
+
+/* Link styling */
+a {
+  color: #0d6efd; /* Matching the button color for consistency */
+  text-decoration: none; /* No underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

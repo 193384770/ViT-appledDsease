@@ -1,0 +1,88 @@
+
+/* .sidebar {
+    background-image: linear-gradient(to bottom, rgb(248 249 254), #4643aa); 
+    width: 200px;
+    padding-top: 1rem;
+} */
+
+
+.sidebar hr {
+    margin: 1rem 0;
+    color: inherit; /* 保持分割线颜色与背景一致 */
+    background-color: inherit;
+    border: 0;
+    border-bottom: 1px solid #787676; /* 灰色分割线 */
+}
+
+.sidebar .nav-link.active {
+    /* 导航栏内活动界面对应的字体 */
+    font-style: italic;
+    color: #3b3551 !important; 
+    border-radius: 0.25rem;
+}
+
+.sidebar .nav-link {
+    color: #454545 !important; /* 导航栏黑色字体 */
+}
+
+.shadow-sm.navbar.navbar-expand-lg.navbar-light.bg-white {
+    background-color: rgb(226, 227, 242);
+}
+
+.navbar .navbar-brand {
+    background-color: rgba(0, 0, 0, 0); /* 设置白色背景，50%的透明度 */
+    font-weight: bold;
+    color: #3b3a3a; /* 标题文字颜色 */
+}
+
+.page-content {
+    /* 添加内容的容器样式 */
+    flex-grow: 1; /* 使容器填充剩余空间 */
+    background-size: cover; /* 覆盖整个容器 */
+    background-position: center; /* 图片居中显示 */
+    background-repeat: no-repeat; /* 不重复图片 */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-content h2 {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%); /* 移动元素的一半宽度和高度来居中 */
+    /* 其他样式，如字体大小、颜色等 */
+    font-weight: bold; /* 设置为黑体 */
+    color: #484848; /* 设置文本颜色为黑色 */
+    text-shadow: 1px 1px 0px #fff, /* 水平偏移, 垂直偏移, 模糊距离, 阴影颜色 */
+                 -1px -1px 0px #fff, /* 也可以添加多个阴影 */
+                 1px -1px 0px #fff,
+                 -1px 1px 0px #fff;
+}
+
+.custom-card-background {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px; /* 可选的，为卡片添加圆角 */
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 可选的，添加轻微阴影以增强立体感 */
+}
+
+.card-text {
+    text-align: left !important;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #ffffff; */
+}
+
+.card-body,
+.mt-3 .card {
+    height: 100%;
+    width: 100%;
+}
+
+.Pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
